@@ -34,4 +34,5 @@ def check_unique_set(string: str) -> bool:
 
 if __name__ == "__main__":
     import doctest
+
     doctest.testmod()
