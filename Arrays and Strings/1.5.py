@@ -1,5 +1,6 @@
 # One Away: Write a function to check if they are one edit (or zero edits) away from being identical
-
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 def one_away(s1: str, s2: str) -> bool:
     """Return True if s1 is one character change (diff char, removal of char, insertion of char) away from s2
     >>> one_away('pale', 'ple')
