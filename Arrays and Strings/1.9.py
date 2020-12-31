@@ -1,4 +1,4 @@
-# String Rotation: Check if string s2 is contained in s1
+# String Rotation: Check if string s2 is a rotation of s1
 # Time Complexity: O(n) where n = s1
 # Space Complexity: O(n) where n = s1
 
