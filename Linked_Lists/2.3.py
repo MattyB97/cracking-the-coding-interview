@@ -1,6 +1,7 @@
 # Delete Middle Node: Implement an algorithm to delete a middle node
 # Note that middle node simply means not head or tail node
-
+# Time Complexity: O(n) where n is the length of the singly linked list
+# Space Complexity: O(n) where n is the length of the singly linked list
 from Linked_Lists.Linked_List import Node
 from Linked_Lists.Linked_List import SLinkedList
 
