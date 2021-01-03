@@ -44,7 +44,7 @@ class SLinkedList:
         if val == 0:
             self.remove_head()
         cur_node = self.head
-        for i in range(val-1):
+        for i in range(val - 1):
             if cur_node.next.next is None:
                 break
             cur_node = cur_node.next
@@ -78,7 +78,7 @@ class DLinkedList:
             self.append_to_head(node)
             return
         cur_node = self.head
-        for i in range(val-1):
+        for i in range(val - 1):
             if cur_node.next is None:
                 cur_node.next = node
                 node.prev = cur_node
@@ -113,50 +113,46 @@ class DLinkedList:
         cur_node.next.prev = cur_node
 
 
-# Driver Code
-linked_list = DLinkedList()
-linked_list.head = Node("Mon")
-e2 = Node("Tue")
-e3 = Node("Wed")
-e4 = Node("Thu")
-e5 = Node("Sun")
-e6 = Node("Fri")
-e7 = Node("Sat")
-linked_list.head.next = e2
-e2.prev = linked_list.head
-e2.next = e3
-e3.prev = e2
-e3.next = e4
-e4.prev = e3
-e4.next = None
-
-linked_list.list_print()
-linked_list.append_to_head(e5)
-linked_list.append_to_tail(e6)
-linked_list.append_at(e7, 7)
-print()
-linked_list.list_print()
-print()
-linked_list.remove_tail()
-linked_list.remove_head()
-linked_list.list_print()
-print()
-linked_list.remove_at(1)
-linked_list.list_print()
-
-
-
-
-
+# # Driver Code
+# linked_list = DLinkedList()
+# linked_list.head = Node("Mon")
+# e2 = Node("Tue")
+# e3 = Node("Wed")
+# e4 = Node("Thu")
+# e5 = Node("Sun")
+# e6 = Node("Fri")
+# e7 = Node("Sat")
 # linked_list.head.next = e2
+# e2.prev = linked_list.head
 # e2.next = e3
+# e3.prev = e2
+# e3.next = e4
+# e4.prev = e3
+# e4.next = None
 #
 # linked_list.list_print()
-#
-# linked_list.append_to_tail(e4)
 # linked_list.append_to_head(e5)
+# linked_list.append_to_tail(e6)
+# linked_list.append_at(e7, 7)
+# print()
 # linked_list.list_print()
-# print('')
-# linked_list.append_at(e6, 9)
-# linked_list.remove_at(0)
+# print()
+# linked_list.remove_tail()
+# linked_list.remove_head()
 # linked_list.list_print()
+# print()
+# linked_list.remove_at(1)
+# linked_list.list_print()
+#
+# # linked_list.head.next = e2
+# # e2.next = e3
+# #
+# # linked_list.list_print()
+# #
+# # linked_list.append_to_tail(e4)
+# # linked_list.append_to_head(e5)
+# # linked_list.list_print()
+# # print('')
+# # linked_list.append_at(e6, 9)
+# # linked_list.remove_at(0)
+# # linked_list.list_print()
